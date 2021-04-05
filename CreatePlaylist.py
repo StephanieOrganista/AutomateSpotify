@@ -72,6 +72,12 @@ class CreatePlaylist:
                 }
         
     def create_playlist(self):
+        """Create A New Playlist"""
+        request_body = json.dumps({
+            "name": "Youtube Liked Vids",
+            "description": "All Liked Youtube Videos",
+            "public": True
+        })
         pass
     
     def get_spotify_url(self):
